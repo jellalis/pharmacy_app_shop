@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "38293133607",
+    "project_id": "panagouprojectpharmacyapp",
+    "storage_bucket": "panagouprojectpharmacyapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38293133607:android:040b85459a3a6c306cb102",
+        "android_client_info": {
+          "package_name": "com.panagou.pms.android.project.pharmacyapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWXCTuG0-RELOC_eK70M2wYA4slA_Tszg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
