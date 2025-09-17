@@ -41,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/design_default_color_secondary_variant"
-        android:onClick=""
+        android:onClick="doLogin"
         android:text="Login"
         app:iconTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
