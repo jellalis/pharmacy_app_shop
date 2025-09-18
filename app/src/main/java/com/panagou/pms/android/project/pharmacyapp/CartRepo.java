@@ -42,6 +42,9 @@ public class CartRepo {
         return sum;
     }
 
+    public void clear(){
+        items.clear();
+    }
     private boolean same(Product a, Product b) {
         if (a == null || b == null) return false;
         if (a.getId() != null && b.getId() != null) return a.getId().equals(b.getId());
