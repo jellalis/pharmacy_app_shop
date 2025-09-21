@@ -62,19 +62,16 @@ public class LoginActivity extends AppCompatActivity {
         v.setEnabled(false);
 
         auth.signInWithEmailAndPassword(email, pass)
-                .addOnSuccessListener(result -> {
-                    v.setEnabled(true);
-                    String uid = (result.getUser() != null) ? result.getUser().getUid() : "null";
-                    android.util.Log.d(TAG, "login SUCCESS. uid=" + uid);
-                    Toast.makeText(this, "Logged in", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(this, ProductsActivity.class));
-                    finish();
+                .addOnSuccessListener(r -> {
+                    Intent i = new Intent(this, ProductsActivity.class);
+                    i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    startActivity(i);
+
                 })
                 .addOnFailureListener(e -> {
-                    v.setEnabled(true);
-                    android.util.Log.e(TAG, "login FAILED", e);
                     Toast.makeText(this, "Login failed: " + e.getMessage(), Toast.LENGTH_LONG).show();
                 });
+
     }
 
     private String text(EditText et) {

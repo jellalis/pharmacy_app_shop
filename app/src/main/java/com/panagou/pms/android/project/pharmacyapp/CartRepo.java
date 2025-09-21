@@ -16,6 +16,9 @@ public class CartRepo {
     public List<CartItem> getItems() { return items; }
 
     public void add(Product p, int qty) {
+        android.util.Log.d("CART", "add: " +
+                (p==null? "null" : (p.getName()+" | id="+p.getId()+" | price="+p.getPrice())) +
+                " qty=" + qty);
         if (p == null || qty <= 0) return;
         for (CartItem ci : items) {
             if (same(p, ci.getProduct())) {
@@ -25,6 +28,7 @@ public class CartRepo {
         }
         items.add(new CartItem(p, qty));
     }
+
 
     public void remove(Product p) {
         items.removeIf(ci -> same(p, ci.getProduct()));

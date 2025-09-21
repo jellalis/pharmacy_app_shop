@@ -8,9 +8,8 @@ public class Order {
     public String userId;
     public Double total;
     public List<OrderItem> items;
-    public String status; // e.g. "new"
-    @ServerTimestamp public Date createdAt;
-
+    public String status;
+    @com.google.firebase.firestore.ServerTimestamp public java.util.Date createdAt;
     public Order() {}
     public Order(String userId, Double total, List<OrderItem> items, String status) {
         this.userId = userId;
@@ -19,3 +18,5 @@ public class Order {
         this.status = status;
     }
 }
+
+
