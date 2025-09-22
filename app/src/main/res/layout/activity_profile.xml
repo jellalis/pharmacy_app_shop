@@ -8,12 +8,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Τίτλος -->
+
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="My Profile"
+        android:text="@string/my_profile"
         android:textStyle="bold"
         android:textSize="15sp"
         android:padding="16dp"
@@ -21,7 +21,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Περιεχόμενο -->
+
     <LinearLayout
         android:id="@+id/content"
         android:layout_width="0dp"
@@ -75,11 +75,12 @@
             android:id="@+id/btnLogout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/design_default_color_secondary_variant"
             android:layout_marginTop="24dp"
-            android:text="Logout"/>
+            android:text="@string/logout"/>
     </LinearLayout>
 
-    <!-- Bottom Navigation ΠΑΝΤΑ στο κάτω μέρος -->
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
         android:layout_width="0dp"

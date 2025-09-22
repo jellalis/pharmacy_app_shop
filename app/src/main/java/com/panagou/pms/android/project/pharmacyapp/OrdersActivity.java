@@ -111,7 +111,7 @@ public class OrdersActivity extends AppCompatActivity {
                         rows.add(r);
                     });
 
-                    // sort local by createdTime DESC
+
                     java.util.Collections.sort(rows, (a, b) -> {
                         java.util.Date da = a.createdTime;
                         java.util.Date db = b.createdTime;

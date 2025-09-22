@@ -10,7 +10,7 @@
         android:id="@+id/tvOrdersTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Orders"
+        android:text="@string/orders"
         android:textStyle="bold"
         android:textSize="18sp"
         android:padding="16dp" />

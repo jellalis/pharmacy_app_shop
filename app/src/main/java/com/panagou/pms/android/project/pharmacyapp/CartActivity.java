@@ -34,9 +34,9 @@ public class CartActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_cart); // πρέπει να έχει: rootCart, rvCart, tvTotal, btnCheckout, (bottom_nav προαιρετικό)
+        setContentView(R.layout.activity_cart);
 
-        // Insets για status/gesture bars
+
         View root = findViewById(R.id.rootCart);
         BottomNavigationView bottom = findViewById(R.id.bottom_nav);
         if (root != null) {
@@ -116,7 +116,7 @@ public class CartActivity extends AppCompatActivity {
         super.onResume();
         BottomNavigationView bottom = findViewById(R.id.bottom_nav);
         if (bottom != null) bottom.setSelectedItemId(R.id.nav_cart);
-        refresh(); // ώστε να ξαναδει το τρέχον περιεχόμενο
+        refresh();
     }
 
     private void refresh() {

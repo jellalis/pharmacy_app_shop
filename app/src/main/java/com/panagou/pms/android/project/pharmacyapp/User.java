@@ -31,5 +31,5 @@ public class User {
     public Date getCreatedTime() { return createdTime; }
     public Date getUpdatedTime() { return updatedTime; }
 
-    // setters αν τους χρειαστείς στο μέλλον
+
 }

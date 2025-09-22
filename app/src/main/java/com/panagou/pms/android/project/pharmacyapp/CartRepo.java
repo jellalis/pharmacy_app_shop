@@ -52,7 +52,7 @@ public class CartRepo {
     private boolean same(Product a, Product b) {
         if (a == null || b == null) return false;
         if (a.getId() != null && b.getId() != null) return a.getId().equals(b.getId());
-        // fallback με όνομα αν δεν έχεις id (δεν προτείνεται μακροπρόθεσμα)
+
         return String.valueOf(a.getName()).equals(String.valueOf(b.getName()));
     }
 }

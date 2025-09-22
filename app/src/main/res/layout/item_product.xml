@@ -9,7 +9,7 @@
 
     <TextView
         android:id="@+id/txtName"
-        android:text="Product name"
+        android:text="@string/product_name"
         android:textStyle="bold"
         android:textSize="16sp"
         android:layout_width="wrap_content"
@@ -21,5 +21,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
-    <!-- Αν θες αργότερα, βάζουμε και imageView εδώ -->
+
 </LinearLayout>

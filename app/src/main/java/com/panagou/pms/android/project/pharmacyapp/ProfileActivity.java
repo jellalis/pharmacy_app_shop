@@ -35,7 +35,7 @@ public class ProfileActivity extends AppCompatActivity {
         View root = findViewById(R.id.rootProfile);
         BottomNavigationView bottom = findViewById(R.id.bottom_nav);
 
-        // Edge-to-edge insets
+
         ViewCompat.setOnApplyWindowInsetsListener(root, (v, insets) -> {
             Insets bars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(bars.left, bars.top, bars.right, 0);
@@ -50,7 +50,7 @@ public class ProfileActivity extends AppCompatActivity {
             return insets;
         });
 
-        // Bottom nav
+
         if (bottom != null) {
             bottom.setSelectedItemId(R.id.nav_profile);
             bottom.setOnItemSelectedListener(item -> {
@@ -108,10 +108,10 @@ public class ProfileActivity extends AppCompatActivity {
         }
         String uid = u.getUid();
 
-        // Δείξε email άμεσα (ακόμα κι αν δεν υπάρχει user doc)
+
         tvEmail.setText("Email: " + (u.getEmail() == null ? "-" : u.getEmail()));
 
-        // Αν κρατάς προφίλ στο Firestore: collection "users" -> doc(uid)
+
         FirebaseFirestore.getInstance()
                 .collection("users").document(uid)
                 .get()
@@ -122,14 +122,14 @@ public class ProfileActivity extends AppCompatActivity {
 
     private void bindUser(DocumentSnapshot d) {
         if (d == null || !d.exists()) {
-            // Δεν υπάρχει user doc – κρατάμε μόνο το email που βάλαμε ήδη
+
             return;
         }
         tvName.setText("Name: "   + nn(d.getString("name")));
         tvPhone.setText("Phone: " + nn(d.getString("phone")));
         tvRole.setText("Role: "   + nn(d.getString("role")));
 
-        // 🔁 χρησιμοποίησε τα σωστά ονόματα πεδίων
+
         tvCreated.setText("Created: " + fmt(d.getTimestamp("createdTime")));
         tvUpdated.setText("Updated: " + fmt(d.getTimestamp("updatedTime")));
     }

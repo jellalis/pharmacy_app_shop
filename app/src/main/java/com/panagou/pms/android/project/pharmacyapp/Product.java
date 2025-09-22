@@ -22,7 +22,7 @@ public class Product {
     public String getDescription() { return description; }
     public String getImageUrl() { return imageUrl; }
 
-    // Setters (αν τα χρειαστείς)
+
     public void setId(String id) { this.id = id; }
     public void setName(String name) { this.name = name; }
     public void setPrice(Double price) { this.price = price; }

@@ -21,7 +21,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.VH> {
     private final List<Product> items = new ArrayList<>();
     private OnProductClick onClick;
 
-    // Μέθοδος για να συνδέσεις τον listener από το Activity
+
     public void setOnProductClick(OnProductClick l) { this.onClick = l; }
 
     public void setItems(List<Product> data) {
@@ -45,7 +45,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.VH> {
         double price = p.getPrice() != null ? p.getPrice() : 0.0;
         h.txtPrice.setText(String.format(Locale.getDefault(), "€%.2f", price));
 
-        // 🔹 Προσθήκη click
+
         h.itemView.setOnClickListener(v -> {
             if (onClick != null) onClick.onClick(p);
         });

@@ -6,24 +6,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Τίτλος -->
+
     <TextView
         android:id="@+id/tvPageTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="Page"
+        android:text="@string/page"
         android:textSize="20sp"
         android:textStyle="bold" />
 
-    <!-- ΕΔΩ θα γίνεται inflate το περιεχόμενο κάθε σελίδας -->
+
     <FrameLayout
         android:id="@+id/page_content"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
 
-    <!-- Bottom Navigation -->
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
 

@@ -28,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.login);
 
-        // Safe insets (αν υπάρχει @id/main στο layout)
+
         View root = findViewById(R.id.main);
         if (root != null) {
             ViewCompat.setOnApplyWindowInsetsListener(root, (v, insets) -> {
@@ -42,14 +42,14 @@ public class LoginActivity extends AppCompatActivity {
         etPassword = findViewById(R.id.editTextTextPassword);
         auth       = FirebaseAuth.getInstance();
 
-        // Προαιρετικό: δένω και programmatically
+
         Button btnLogin = findViewById(R.id.button3);
         if (btnLogin != null) btnLogin.setOnClickListener(this::doLogin);
 
         android.util.Log.d(TAG, "LoginActivity created. FirebaseAuth inited");
     }
 
-    // Καλείται από android:onClick="doLogin" ή από το setOnClickListener
+
     public void doLogin(View v) {
         String email = text(etEmail);
         String pass  = text(etPassword);

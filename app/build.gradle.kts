@@ -38,6 +38,7 @@ android {
 
 dependencies {
     // AndroidX & UI
+
     implementation(libs.appcompat)
     implementation(libs.material)               // κράτα ΕΝΑ material (όχι και libs.google.material)
     implementation(libs.activity)
@@ -55,6 +56,9 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:33.4.0"))
     implementation("com.google.firebase:firebase-auth")
     implementation("com.google.firebase:firebase-firestore")
+
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
 
     // Tests
     testImplementation(libs.junit)

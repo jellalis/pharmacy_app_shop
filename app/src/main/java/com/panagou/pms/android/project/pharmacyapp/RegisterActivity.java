@@ -37,7 +37,7 @@ public class RegisterActivity extends AppCompatActivity {
             });
         }
 
-        etFirstName = findViewById(R.id.editTextText);              // first name
+        etFirstName = findViewById(R.id.editTextText);              //  name
         etLastName  = findViewById(R.id.editTextText2);             // surname
         etEmail     = findViewById(R.id.editTextTextEmailAddress2); // email
         etPhone     = findViewById(R.id.editTextPhone);             // phone
@@ -49,7 +49,7 @@ public class RegisterActivity extends AppCompatActivity {
         android.util.Log.d(TAG, "RegisterActivity created. Firebase ready");
     }
 
-    // Συνδέεται με android:onClick="signup"
+
     public void signup(View view) {
         String first = text(etFirstName);
         String last  = text(etLastName);
@@ -70,7 +70,7 @@ public class RegisterActivity extends AppCompatActivity {
                     android.util.Log.d(TAG, "Auth createUser SUCCESS. uid=" + uid);
 
                     String fullName = (first + " " + last).trim();
-                    User newUser = new User(fullName, email, phone, "customer"); // χρησιμοποιεί το δικό σου POJO User
+                    User newUser = new User(fullName, email, phone, "customer");
 
                     db.collection("users").document(uid)
                             .set(newUser)
