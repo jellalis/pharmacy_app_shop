@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ProjectPharmacyApp</string>
+    <string name="prompt_password">Κωδικός</string>
+    <string name="action_sign_in">Συνδεθείτε ή εγγραφείτε</string>
+    <string name="action_sign_in_short">Σύνδεση</string>
+    <string name="welcome">Καλώς ήρθατε !</string>
+    <string name="invalid_username">Μη έγκυρο όνομα χρήστη</string>
+    <string name="invalid_password">Ο κωδικός πρέπει να έχει πάνω από 5 χαρακτήρες</string>
+    <string name="login_failed">Η σύνδεση απέτυχε</string>
+    <string name="title_home">Αρχική</string>
+    <string name="title_dashboard">Πίνακας Ελέγχου</string>
+    <string name="title_notifications">Ειδοποιήσεις</string>
+    <string name="page">Σελίδα</string>
+    <string name="checkout">Ταμείο</string>
+    <string name="register">Εγγραφή</string>
+    <string name="login">Σύνδεση</string>
+    <string name="orders">Παραγγελίες</string>
+    <string name="description">Περιγραφή</string>
+    <string name="name">Όνομα</string>
+    <string name="decrease_quantity">Μείωση ποσότητας</string>
+    <string name="increase_quantity">Αύξηση ποσότητας</string>
+    <string name="add_to_cart">Προσθήκη στο καλάθι</string>
+    <string name="products">Προϊόντα</string>
+    <string name="logout">Αποσύνδεση</string>
+    <string name="telephone">Τηλέφωνο</string>
+    <string name="sign_up">Εγγραφή</string>
+    <string name="surname">Επώνυμο</string>
+    <string name="password">Κωδικός</string>
+    <string name="first_name">Όνομα</string>
+    <string name="remove">Αφαίρεση</string>
+    <string name="my_profile">Το προφίλ μου</string>
+    <string name="product_name">Όνομα προϊόντος</string>
+</resources>

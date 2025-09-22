@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:background="@color/material_dynamic_tertiary70"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tvOrderTitle"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textStyle="bold" android:textSize="16sp"
+        android:text="Order #XXXX"/>
+
+    <TextView
+        android:id="@+id/tvOrderSub"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="3 items • €12.50 • 2025-09-20 13:20" />
+
+    <TextView
+        android:id="@+id/tvOrderStatus"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Status: new"
+        android:textSize="12sp" android:alpha="0.8"/>
+</LinearLayout>
