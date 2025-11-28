@@ -51,12 +51,13 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="205dp"
-        android:layout_height="26dp"
+        android:layout_width="207dp"
+        android:layout_height="34dp"
         android:text="The greatest medicine of all is to teach people how not to need it"
         android:textAlignment="center"
         android:textColorLink="#4CAF50"
-        android:textSize="8sp"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.565"
